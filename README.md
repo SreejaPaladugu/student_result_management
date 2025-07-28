@@ -8,11 +8,11 @@ This system allows administrators and teachers to add, update, and view student 
 - Enter and manage student exam results
 - View student results and reports
 - User authentication and role-based access (optional, if implemented)
-- Responsive web interface with a desktop version (if applicable)
+- Responsive web interface with a desktop version 
 
 ## Tech Stack
 - Backend: Python (Flask / FastAPI or other framework used)
-- Frontend: HTML, CSS, JavaScript (React or plain, as per your project)
+- Frontend: HTML, CSS, JavaScript (React or plain)
 - Database: SQLite / MySQL / PostgreSQL (based on your setup)
 - Other tools: Docker (optional), Git
 
