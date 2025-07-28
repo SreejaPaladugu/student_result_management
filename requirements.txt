@@ -1,2 +1,14 @@
-Flask
-Werkzeug
+
+---
+
+### requirements.txt
+
+```txt
+flask
+sqlalchemy
+pandas
+uvicorn
+fastapi
+jinja2
+python-dotenv
+requests
