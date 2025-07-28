@@ -1,0 +1,40 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+
+.login-btn:hover {
+  background-color: #0056b3 !important;
+  transform: scale(1.04);
+  transition: background 0.2s, transform 0.2s;
+}
+.signup-btn:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.login-bg {
+  background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+  /* Enhanced school-themed SVG pattern as background */
+  background-image: url('data:image/svg+xml;utf8,<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="60" height="60" rx="12" fill="%23e3f0ff" stroke="%234e73df" stroke-width="2"/><circle cx="40" cy="40" r="10" fill="%234e73df" fill-opacity="0.25"/><rect x="30" y="60" width="20" height="8" rx="4" fill="%234e73df" fill-opacity="0.18"/></svg>');
+  background-repeat: repeat;
+  background-size: 120px 120px;
+}
+.login-card {
+  border: 2px dashed #4e73df;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+.logout-link {
+  color: #dc3545 !important;
+  text-decoration: underline !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 1.2rem 0.5rem 1.5rem !important;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="position-relative d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <a href="{{ url_for('logout') }}" class="position-absolute logout-link" style="top: 0; right: 0; z-index: 10; font-size: 1rem; color: #dc3545; text-decoration: underline; padding: 0.5rem 1.5rem;">Logout</a>
+  <div class="login-card p-4 w-25 mx-auto">
+    <div class="card-body text-center">
+      <div class="mb-5">
+        <h2 style="font-size: 2.2rem; font-weight: bold;">Welcome, <span class="text-primary">{{ session['username'] }}</span></h2>
+      </div>
+      <a href="{{ url_for('add_student') }}" class="btn btn-primary mb-4 w-100" style="font-size: 1.3rem; padding: 0.75rem 0;">Add Student</a>
+      <a href="{{ url_for('view_students') }}" class="btn btn-secondary w-100" style="font-size: 1.3rem; padding: 0.75rem 0;">View Students</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

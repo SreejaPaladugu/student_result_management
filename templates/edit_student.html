@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <div class="login-card p-4 w-50 mx-auto">
+    <div class="text-center mb-3">
+      <h4>Edit Student</h4>
+    </div>
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">Student Name</label>
+        <input type="text" name="name" class="form-control" value="{{ student['name'] }}" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Roll Number</label>
+        <input type="text" name="roll" class="form-control" value="{{ student['roll'] }}" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Marks</label>
+        <input type="number" name="marks" class="form-control" value="{{ student['marks'] }}" required>
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Update Student</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
